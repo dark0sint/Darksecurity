@@ -1,0 +1,11 @@
+[Unit]
+Description=DarkSecurity Monitoring Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/darkSecurity/main.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
